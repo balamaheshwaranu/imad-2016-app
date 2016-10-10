@@ -26,6 +26,7 @@ function CreateTemplate(data){
     <head>
         <title> ${title} </title>
         <link href="/ui/style.css" rel="stylesheet" />
+        <script src="main.js"></script>
     </head>
     <body>
             <h3> ${date} </h3>
