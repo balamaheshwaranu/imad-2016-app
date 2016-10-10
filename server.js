@@ -40,7 +40,9 @@ function CreateTemplate(data){
                                 </div>
                                 <script type="text/javascript" src="/ui/main.js">
                                 </script>
+                                <div class = "center text-small">
                                    ${content}
+                                </div>
                    
                 </div>
     </body>
