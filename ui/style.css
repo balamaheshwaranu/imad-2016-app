@@ -20,3 +20,11 @@ body {
     height: 200px;
 }
 
+.MainContent{
+    margin: 100px 150px 100px 80px;
+}
+
+body {
+    background-color: white;
+    align-content: center;
+}
