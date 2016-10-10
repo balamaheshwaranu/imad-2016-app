@@ -26,20 +26,23 @@ function CreateTemplate(data){
     <head>
         <title> ${title} </title>
         <link href="/ui/style.css" rel="stylesheet" />
-        <script src="main.js"></script>
+     
     </head>
     <body>
-            <h3> ${date} </h3>
-            <div class="center">
-                <img src="/ui/madi.png" class="img-medium"/>
-            </div>
-            <hr/>
-            <div class="center text-big bold">
-               ${heading}
-            </div>
-            <script type="text/javascript" src="/ui/main.js">
-            </script>
-               ${content}
+                  <div class="MainContent">
+                                <h3> ${date} </h3>
+                                <div class="center">
+                                             <img src="/ui/madi.png" class="img-medium"/>
+                                </div>
+                                <hr/>
+                                <div class="center text-big bold">
+                                                ${heading}
+                                </div>
+                                <script type="text/javascript" src="/ui/main.js">
+                                </script>
+                                   ${content}
+                   
+                </div>
     </body>
 </html>`;
 
