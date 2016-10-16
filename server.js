@@ -75,6 +75,10 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+app.get('/index', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
 var counter = 0;
 app.get('/CountIncrement', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'BalaTest.html'));
