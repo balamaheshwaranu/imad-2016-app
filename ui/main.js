@@ -25,7 +25,7 @@ function myFunction() {
      
  };
  var name = firstName.value+'-'+comments.value;
- request.open('GET','http://http://balamaheshwaranu.imad.hasura-app.io/commentsIncrement?name='+name,true);
+ request.open('GET','http://balamaheshwaranu.imad.hasura-app.io/commentsIncrement?name='+name,true);
  request.send(null);
 }
 
