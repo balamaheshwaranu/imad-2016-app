@@ -33,3 +33,14 @@ body {
     background-color: white;
     align-content: center;
 }
+.comments > label
+{
+  float: left;
+  clear: right;
+}
+
+.comments > input
+{
+  float: right;
+}
+
