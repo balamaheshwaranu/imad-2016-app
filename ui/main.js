@@ -6,10 +6,12 @@ submitButton.onclick = function() {myFunction()};
 
 function myFunction() {
  var request = new XMLHttpRequest();
- 
+   console.log('here1');
  request.onreadystatechange = function(){
      if(request.readystate === XMLHttpRequest.DONE){
+         console.log('here2');
          if (request.status === 200){
+             console.log('here3');
              var names = request.responseText;
              names.JSON.parse(names);
              var list = '';
@@ -18,6 +20,7 @@ function myFunction() {
                  list += '<li>'+names[i]+'</li>';
             }
             list += '</ul>';
+            console.log('here4');
             var reslt = document.getElementById("Results");
             reslt.innerHTML = list;
          }
@@ -26,6 +29,7 @@ function myFunction() {
  };
  var name = firstName.value+'-'+comments.value;
  request.open('GET','http://balamaheshwaranu.imad.hasura-app.io/commentsIncrement?name='+name,true);
+  console.log('here5');
  request.send(null);
 }
 
