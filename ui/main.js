@@ -2,7 +2,7 @@ console.log('Loaded!');
 var submitButton = document.getElementById("SubmitButton");
 var firstName = document.getElementById("firstName");
 var comments = document.getElementById("Comments");
-document.getElementById("comments").onclick = function() {myFunction()};
+comments.onclick = function() {myFunction()};
 
 function myFunction() {
  var request = new XMLHttpRequest();
