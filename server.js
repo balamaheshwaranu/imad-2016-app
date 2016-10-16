@@ -81,6 +81,8 @@ app.get('/index', function (req, res) {
 
 var names = [];
 app.get('/commentsIncrement', function (req, res) {
+    
+console.log('inside server js');    
   //res.sendFile(path.join(__dirname, 'ui', 'BalaTest.html'));
   tmpname = req.query.name;
   names.push(tmpname);
