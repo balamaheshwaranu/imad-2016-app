@@ -79,7 +79,7 @@ var counter = 0;
 app.get('/CountIncrement', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'BalaTest.html'));
   counter = counter+1;
-  res.send(counter);
+  res.send(counter.toString());
 });
 
 
