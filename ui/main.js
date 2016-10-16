@@ -29,6 +29,7 @@ function myFunction() {
      
  };
  var name = firstName.value+comments.value;
+ 
  request.open('GET','http://balamaheshwaranu.imad.hasura-app.io/commentsIncrement?name='+name,true);
   console.log('here5');
  request.send(null);
