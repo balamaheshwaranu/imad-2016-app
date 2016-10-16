@@ -43,4 +43,8 @@ body {
 {
   float: left;
 }
+.Comments > textarea
+{
+  float: left;
+}
 
