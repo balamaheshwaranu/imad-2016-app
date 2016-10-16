@@ -14,7 +14,7 @@ function myFunction() {
          if (request.status === 200){
              console.log('here3');
              var names = request.responseText;
-             names.JSON.parse(names);
+             names = JSON.parse(names);
              var list = '';
              list = '<ul>';
              for (var i=0;i<names.length;i++){
