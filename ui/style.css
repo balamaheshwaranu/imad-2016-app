@@ -33,13 +33,13 @@ body {
     background-color: white;
     align-content: center;
 }
-.comments > label
+.Comments > label
 {
   float: left;
   clear: right;
 }
 
-.comments > input
+.Comments > input
 {
   float: right;
 }
