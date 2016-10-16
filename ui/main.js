@@ -8,6 +8,7 @@ function myFunction() {
  var request = new XMLHttpRequest();
    console.log('here1');
  request.onreadystatechange = function(){
+     console.log('here1.5');
      if(request.readystate === XMLHttpRequest.DONE){
          console.log('here2');
          if (request.status === 200){
