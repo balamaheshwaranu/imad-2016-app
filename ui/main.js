@@ -21,7 +21,7 @@ function myFunction() {
                  list += '<li>'+names[i]+'</li>';
             }
             list += '</ul>';
-            console.log('here4');
+            console.log(list);
             var reslt = document.getElementById("Results");
             reslt.innerHTML = list;
          }
