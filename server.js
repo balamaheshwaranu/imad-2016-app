@@ -79,11 +79,13 @@ app.get('/index', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var counter = 0;
-app.get('/CountIncrement', function (req, res) {
+var names = [];
+app.get('/commentsIncrement', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'BalaTest.html'));
-  counter = counter+1;
-  res.send(counter.toString());
+  tmpname = req.query.name;
+  names.push(tmpname);
+  
+  res.send(JSON.stringify(names));
 });
 
 
