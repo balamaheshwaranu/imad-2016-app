@@ -1,8 +1,8 @@
 console.log('Loaded!');
-var submitButton = document.getElementById("SubmitButton");
+var submitButton = document.getElementById("submitButton");
 var firstName = document.getElementById("firstName");
 var comments = document.getElementById("Comments");
-comments.onclick = function() {myFunction()};
+submitButton.onclick = function() {myFunction()};
 
 function myFunction() {
  var request = new XMLHttpRequest();
