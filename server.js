@@ -84,7 +84,8 @@ app.get('/commentsIncrement', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'BalaTest.html'));
   tmpname = req.query.name;
   names.push(tmpname);
-  
+  console.log('here');
+  console.log(names);
   res.send(JSON.stringify(names));
 });
 
